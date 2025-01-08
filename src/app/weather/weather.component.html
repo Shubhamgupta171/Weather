@@ -1,0 +1,54 @@
+
+<div class="container">
+  <div class="row">
+    <!-- Search Form -->
+    <div class="col-md-6 mx-auto">
+      <h1 class="text-center my-7">Weather Dashboard</h1>
+      <form [formGroup]="weatherSearchForm" (ngSubmit)="sendToAPIXU(weatherSearchForm.value)">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="weatherLocation"
+            aria-describedby="weatherLocation"
+            placeholder="Enter a location"
+            formControlName="location"
+          />
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-success btn-md">Search for 3-day forecast</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Current Weather Details -->
+  <div class="row mt-4">
+    <div class="col-md-5 mx-auto">
+      <div class="weather-details-box">
+        <h3>Current Weather</h3>
+        <div>
+          <p>Weather conditions:</p>
+          <span *ngFor="let condition of weatherData?.current?.weather_descriptions">{{ condition }}</span>
+        </div>
+        <p>Temperature: {{ weatherData?.current?.temperature }}°C</p>
+        <p>Feels like: {{ weatherData?.current?.feelslike }}°C</p>
+        <p>Location: {{ weatherData?.location?.name }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3-Day Weather Forecast -->
+  <div class="row mt-5" *ngIf="forecastData?.length > 0">
+    <h3 class="text-center my-4 col-12">3-Day Weather Forecast</h3>
+    <div class="col-md-4" *ngFor="let day of forecastData">
+      <div class="forecast-day">
+        <h4>{{ day.date }}</h4>
+        <img [src]="day.day.condition.icon" alt="Weather Icon" />
+        <p>{{ day.day.condition.text }}</p>
+        <p>High: {{ day.day.maxtemp_c }}°C</p>
+        <p>Low: {{ day.day.mintemp_c }}°C</p>
+      </div>
+    </div>
+  </div>
+</div>
