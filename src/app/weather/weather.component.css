@@ -1,88 +1,107 @@
-/* src/app/weather/weather.component.css */
-
 .container {
-    margin-top: 15px;
-    display: block;
+  margin-top: 15px;
+  /* display: block; */
+}
 
-  }
-  .forecast-day {
-    background-color:#f7f9f9; /* Light background */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    padding: 10px; /* Internal spacing */
-    margin: 3px ; /* Space between cards */
-    text-align: center; /* Center-align text and image */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
-    max-width: 400px;
-    gap: auto;
-  }
-  
-  .forecast-day:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-  }
-  
-  .forecast-day h4 {
-    font-size: 20px; /* Clear date text */
-    font-weight: bold; /* Bold for emphasis */
-    color: #007bff; /* Primary color for heading */
-    margin-bottom: 10px; /* Space below date */
-  }
- 
-  
-  .forecast-day img {
-    width: 60px; /* Restrict icon size */
-    height: 60px; /* Ensure square dimensions */
-    margin: 10px 0; /* Space around icon */
-  }
-  
-  .forecast-day p {
-    font-size: 16px; /* Clear, readable text */
-    color: #555; /* Neutral text color */
-    margin: 5px 0; /* Space between lines */
-  }
-  
-  h3.text-center {
-    font-size: 24px; /* Larger heading for the forecast section */
-    color: #333; /* Darker heading color */
-    font-weight: bold;
-    margin-bottom: 20px; /* Space below heading */
-  }
-  
-  .weather-details-box {
-    background-color:#f7f9f9; /* Light background for contrast */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    padding: 10px; /* Internal spacing */
-    margin: 3px auto; /* Center the box and add spacing */
-    max-width: 400px; /* Limit width for a compact design */
-    text-align: center; /* Center-align text */
-  }
-  
-  .weather-details-box h3 {
-    font-size: 24px; /* Slightly larger heading */
-    font-weight: bold; /* Make heading stand out */
-    margin-bottom: 15px; /* Add space below heading */
-    color: #007bff; /* Primary color for heading */
-  }
-  
-  .weather-details-box p {
-    font-size: 18px; /* Clear and readable text size */
-    margin: 10px 0; /* Spacing between lines */
-    color: #333; /* Darker text for readability */
-  }
-  
-  .weather-details-box span {
-    font-size: 16px; /* Description text size */
-    color: #555; /* Slightly lighter text for conditions */
-  }
-  
-  .weather-details-box {
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
-  }
-  
-  .weather-details-box:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
-  }
-  
+.forecast-day {
+  background-color: #cdcde4; /* Light background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 10px; /* Internal spacing */
+  margin: 3px; /* Space between cards */
+  text-align: center; /* Center-align text and image */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+  max-width: 400px;
+  gap: auto;
+}
+
+.forecast-day:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.forecast-day h4 {
+  font-size: 20px; /* Clear date text */
+  font-weight: bold; /* Bold for emphasis */
+  color:#080e2c ; /* Primary color for heading */
+  margin-bottom: 10px; /* Space below date */
+}
+
+.forecast-day img {
+  width: 60px; /* Restrict icon size */
+  height: 60px; /* Ensure square dimensions */
+  margin: 10px 0; /* Space around icon */
+}
+
+.forecast-day p {
+  font-size: 16px; /* Clear, readable text */
+  color: #555; /* Neutral text color */
+  margin: 5px 0; /* Space between lines */
+}
+
+h3.text-center {
+  font-size: 24px; /* Larger heading for the forecast section */
+  color: #342d71; /* Darker heading color */
+  font-weight: bold;
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.weather-details-box {
+  background-color: #cdcde4; /* Light background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  padding: 15px; /* Internal spacing */
+  margin: 3px auto; /* Center the box and add spacing */
+  max-width: 400px; /* Limit width for a compact design */
+  text-align: center; /* Center-align text */
+}
+
+.weather-details-box h3 {
+  font-size: 24px; /* Slightly larger heading */
+  font-weight: bold; /* Make heading stand out */
+  margin-bottom: 15px; /* Add space below heading */
+  color:#080e2c; /* Primary color for heading */
+}
+
+.weather-details-box p {
+  font-size: 18px; /* Clear and readable text size */
+  margin: 10px 0; /* Spacing between lines */
+  color: #333; /* Darker text for readability */
+}
+
+.weather-details-box span {
+  font-size: 16px; /* Description text size */
+  color: #555; /* Slightly lighter text for conditions */
+}
+
+.weather-details-box {
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.weather-details-box:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Updated button styles */
+.btn-success {
+  background-color: #FF6d04 !important; /* Set background to orange */
+  border-color:#FF6d04 !important; /* Set border to orange */
+  /* border-radius: 80%;
+  display:block-inline; */
+  /* height: 50px;
+  width: 100px; */
+}
+
+.btn-success:hover {
+  background-color:#ff6d04 !important; /* Slightly darker orange on hover */
+  border: color #ff6d04 !important; /* Match hover border color */
+}
+.weather-logo {
+  max-width: 100%;
+  height: auto;
+  /* margin-bottom:50%; */
+}
+.text-center {
+  text-align: center;
+}

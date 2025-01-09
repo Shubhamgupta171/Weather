@@ -8,10 +8,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ApixuService } from './apixu.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    WeatherComponent
+    WeatherComponent,
+  
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,10 @@
-
-body{
-    background-color: #CCCCFF;
-}
+body {
+    background-color: white;
+    background-image: url('src/assets/back.jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    /* Makes the background cover the entire screen */
+    background-position: center center; /* Centers the background image */
+    /* background-repeat: no-repeat; Prevents the image from repeating */
+    display: block;
+  }
+  

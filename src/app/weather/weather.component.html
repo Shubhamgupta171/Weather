@@ -1,9 +1,57 @@
+<div class="container text-center ">
+  <!-- Navigation Bar -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+    <div class="text-left">
+    <a class="navbar-brand" href="https://www.vantagecircle.com/">
+      
+      <img class="w-auto vc-logo transform md:scale-50 lg:scale-100 origin-left" src="https://res.cloudinary.com/vantagecircle/image/upload/gatsbycms/uploads/2023/07/new-vc-logo.png" alt="Vantage Circle Logo" width="250" height="40">
+     
+    </a>
+    
+  </div>
+     
 
-<div class="container">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div> -->
+  <!-- </nav> -->
+
+  <!-- Main Content -->
   <div class="row">
+    <!-- <div class="text-left"> -->
     <!-- Search Form -->
-    <div class="col-md-6 mx-auto">
-      <h1 class="text-center my-7">Weather Dashboard</h1>
+    <div class="col-md-5 mx-auto">
+      <img
+      class="weather-logo mb-1"
+      src="assets/weather.png"
+      alt="Vantage Weather Logo"
+      width="250"
+      height="200"
+    />
+   
+      <!-- <h1 class="text-center my-3">VANTAGE WEATHER</h1> -->
+      <!-- <img class="  text-center my-3 vc-logo transform md:scale-50 lg:scale-100 origin-center" src="assets/weather.png" alt="Vantage Circle Logo" width="250" height="40"> -->
       <form [formGroup]="weatherSearchForm" (ngSubmit)="sendToAPIXU(weatherSearchForm.value)">
         <div class="form-group">
           <input
@@ -16,7 +64,8 @@
           />
         </div>
         <div class="text-center">
-          <button type="submit" class="btn btn-success btn-md">Search for 3-day forecast</button>
+          <button type="submit" class="btn btn-success btn-rounded-full"> Search for 3-day forecast</button>
+       
         </div>
       </form>
     </div>
